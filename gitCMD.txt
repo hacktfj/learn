@@ -1,0 +1,27 @@
+#创建版本库
+mkdir learngit
+cd learngit
+pwd
+git init #将该目录变为git管理目录
+
+#添加
+git add aa.py
+git commit -m "aaa"
+
+#常用
+git status 
+git log #提交历史
+git reflog #查看id号，命令历史
+git reset --hard id号前几位
+git rm filename
+git checkout --filename #找回
+ssh-keygen -t rsa -C "xxaq22@163.com" #创建公私钥
+ 
+#推送
+git remote add origin https://github.com/hacktfj/learn.git #设置关联地址
+git remote add origin git@github.com:hacktfj/learn.git #或者用ssh方式
+git push -u origin master #将本地全部提交推送到github
+git push origin master #推送最新修改
+
+#克隆
+git clone git@github.com:hacktfj/learn.git
